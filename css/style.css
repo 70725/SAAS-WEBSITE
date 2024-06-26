@@ -67,23 +67,24 @@ img {
 
 /* Hero */
 .hero {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 
   .hero .container {
-    background: url('../images/hero-pg.jpeg') no-repeat;
-    background-size: cover;
-    height: 660px;
+    background: url('../images/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
 }
 
 
 .hero .content {
-    width: 60%;
+    width: 70%;
 }
 
 .hero .hero-text {
     width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 /* Utility Classes */
