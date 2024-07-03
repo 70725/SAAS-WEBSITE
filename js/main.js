@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //Toggle visibility of body
         groupBody.classList.toggle('open');
-
+f
         // Close other open FAQ bodies
         const otherGroups = faqContainer.querySelectorAll('.faq-group');
 
