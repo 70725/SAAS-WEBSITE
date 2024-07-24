@@ -15,6 +15,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background: #fff;
+    height: 100vh;
+    display: flexbox;
+    
+}
+.search{
+    display: flex;
 }
 
 a {
@@ -47,7 +53,7 @@ img {
 }
 
 .navbar ul li a {
-    padding: 10px 20px;
+    padding: 10px 50px;
     display: block;
     font-weight: 600;
     transition: 0.5s;
@@ -58,11 +64,11 @@ img {
 }
 
 .navbar ul li a i {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .navbar ul li:last-child a {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 /* Submenu */
@@ -372,6 +378,10 @@ img {
     border-radius: 10px;
     padding: 20px;
 }
+
+
+
+
 /* Flier from Activating Fun */
 .flier {
 	pointer-events: none;
