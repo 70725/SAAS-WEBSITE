@@ -429,6 +429,37 @@ img {
     background-color: #111;
 }
 
+/* About Me */
+.container-aboutme {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+.container-aboutme h1 {
+    color: #398f51;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.container-aboutme h2 {
+    color: #777;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.container-aboutme .image {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.container-aboutme p {
+    font-size: 2rem;
+    color: #000000;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
 
 
 
