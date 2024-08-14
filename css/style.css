@@ -589,6 +589,25 @@ h2 {
     }
 }
 
+/* Result Box (Search Bar)*/
+.result-box ul{
+    display: inline-block;
+    border: none;
+    border-top: solid #999;
+    padding: 0px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 1px;
+    padding: 0px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background: #e9f3ff;
+}
+
+
+
 /* Flier from Activating Fun */
 .flier {
 	pointer-events: none;
