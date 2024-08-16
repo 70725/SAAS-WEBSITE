@@ -27,12 +27,15 @@ inputBox.onkeyup = function () {
 
 function display(result) {
     const content = result.map((list) => {
-        return "<li>" + list + "</li>";
+        return "<li onclick=selectInput(this)>" + list + "</li>";
     });
 
-    resultsBox.innerHTML = "<ul>" + content + "</ul>";
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
 
+function selectInput(list) {
+    inputBox.value = list.innerHTML;
+}
 
 
 // FAQ Accordian
