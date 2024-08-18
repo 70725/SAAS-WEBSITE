@@ -20,6 +20,7 @@ body {
     overflow-x: hidden;
     
 }
+
 .search{
     display: flex;
     align-items: center;
@@ -589,7 +590,7 @@ h2 {
     }
 }
 
-/* Result Box (Search Bar)*/
+/* Result Box (Search Bar) */
 .result-box ul{
     display: inline-block;
     border: none;
@@ -606,7 +607,30 @@ h2 {
     background: #e9f3ff;
 }
 
-
+/* Searchbox */
+.searchBox {
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+}
+.searchBox.active{
+    right: 0;
+}
+.searchBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 1.25em;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
 
 /* Flier from Activating Fun */
 .flier {

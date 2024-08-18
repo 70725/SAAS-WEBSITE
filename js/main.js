@@ -82,3 +82,15 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburgerButton.addEventListener('click', () =>
         mobileMenu.classList.toggle('active'))
 })
+
+// Search bar
+let searchBtn = document.querySelector('.searchBtn')
+let closeBtn = document.querySelector('.closeBtn')
+let searchBox = document.querySelector('.searchBox')
+
+searchBtn.onclick = function () {
+    searchBox.classList.add('active');
+}
+closeBtn.onclick = function () {
+    searchBox.classList.remove('active');
+}
