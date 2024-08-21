@@ -54,15 +54,62 @@
                         <a href="fun.index.html">Activate Fun</a>
                     </li>
                     <div class="search">
-                        <form>
-                            <input type="text" placeholder="Search...">
-                            <button class="submit">Go</button>
-                        </form>
+                        <span class="icon">
+                            <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                            <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                        </span>
                     </div>
-                </ul>
+
+                    <form autocomplete="off" action="#">
+                        <div class="searchBox">
+                            <input type="text" placeholder="Search here . . ." id="myInput">
+                        </div>
+                     </form> 
+          <!-- Hamburger Button -->
+          <button class="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+            <li>
+                <a href="index.html">Cybersecurity</a>
+            </li>
+            <li>
+                <div class="dropdown"><a href="#">Learning ⌄</a>
+                    <div class="content">
+                        <a href="bestpractices.html">What are the best practices against cyber-attacks?</a>
+                        <a href="commonattacks.html">What are the most common cybersecurity attacks?</a>
+                        <a href="consequences.html">What are the potential consequences of a successful cyber attack on a website?</a>
+                        <a href="trends.html">What are some emerging trends in cybersecurity threats and defence mechanisms?</a>
+                    </div>
+                </div>
+            <li>
+                <div class="dropdown"><a href="#">About Us ⌄</a>
+                    <div class="content">
+                        <a href="team.html">Our Team</a>
+                        <a href="process.html">Our Process</a>
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="fun.index.html">Activate Fun</a>
+            </li>
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Search..." >
+                    <button class="submit">Go</button>
+                </div> 
+                <form>
+                    <input type="text" placeholder="Search..." id="myInput" name="myCountry" autocomplete="off">
+                    <button class="submit">Go</button>
+                </form>
             </div>
+        </ul>
         </div>
-    </nav>
+    </div>
+</nav>
     <!-- Text -->
     <section class="text">
         <div class="container">
@@ -97,14 +144,15 @@
     <div class="container-sm">
         <div class="text-content">
             <h1 class="text-header text-xl">
-                Why is keeping ourselves safe from cyber-attacks a necessity?
+                What is Phishing, Virus, Malware, and Ransomware?
             </h1>
             <p>
-                Keeping ourselves safe on the internet is one of the best things that we could do, especially with the world coming
-                into a very technological sense. In order to keep ourselves safe, a good idea of what we could do is making sure to 
-                follow and just do the best practices against cyber-attacks, whenever we make an account or when we do something technological.
-                In this way, we will be able to help ourselves to do better, and become safer throughout our technological journeys through
-                life. However, the first step to success to learn about cyber-attacks is always understanding what we are really dealing with.
+                Phishing is a cyberattack, where malicious actors will send decptive emails and messages to decieve individuals into disclosing
+                personal information.
+                Viruses are programs that replicate themselves, therefore speading quickly to other parts of files and systems, usually used 
+                for harmful purposes.
+                Malware is just a term that explains any malicious software that disrupts or gains unauthorized access into computer systems.
+                Ransomware is a malicious system that encyrpts files and computer systems and requesting a ransom for the decryption.
             </p>
         </div>
     </div>
@@ -185,5 +233,7 @@
         </div>
        </footer>
     <script src="js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

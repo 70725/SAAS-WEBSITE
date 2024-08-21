@@ -107,4 +107,5 @@ menuToggle.onclick = function () {
     searchBox.classList.remove("active");
     closeBtn.classList.remove("active");
     searchBtn.classList.remove("active");
-  };
+};
+  
