@@ -59,9 +59,12 @@
                             <ion-icon name="close-outline" class="closeBtn"></ion-icon>
                         </span>
                     </div>
-                    <div class="searchBox">
-                        <input type="text" placeholder="Search here . . .">
-                    </div>
+
+                    <form autocomplete="off" action="#">
+                        <div class="searchBox">
+                            <input type="text" placeholder="Search here . . ." id="myInput">
+                        </div>
+                     </form> 
             <!-- Hamburger Button -->
             <button class="hamburger-button">
                 <div class="hamburger-line"></div>
@@ -310,5 +313,8 @@
     <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        autocomplete(document.getElementById("myInput"), countries);
+        </script>
 </body>
 </html>

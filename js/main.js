@@ -84,13 +84,27 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // Search bar
-let searchBtn = document.querySelector('.searchBtn')
-let closeBtn = document.querySelector('.closeBtn')
-let searchBox = document.querySelector('.searchBox')
+let searchBtn = document.querySelector('.searchBtn');
+let closeBtn = document.querySelector('.closeBtn');
+let searchBox = document.querySelector('.searchBox');
 
 searchBtn.onclick = function () {
     searchBox.classList.add('active');
+    closeBtn.classList.add('active');
+    searchBtn.classList.add('active');
 }
 closeBtn.onclick = function () {
     searchBox.classList.remove('active');
+    closeBtn.classList.remove('active');
+    searchBtn.classList.remove('active');
 }
+menuToggle.onclick = function () {
+    if (header.classList.contains("open")) {
+      header.classList.remove("open");
+      return;
+    }
+    header.classList.add("open");
+    searchBox.classList.remove("active");
+    closeBtn.classList.remove("active");
+    searchBtn.classList.remove("active");
+  };
